@@ -1,0 +1,65 @@
+/*************
+    Global 
+ *************/
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/*************
+  Components
+ *************/
+
+.primary-button {
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: 1px solid #415e84;
+  background-color: #2f80ed;
+  box-shadow: #415e84 2px 0px 4px;
+  width: 22ch;
+}
+
+/***************
+  First Section
+ ***************/
+.screen-actions {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+}
+
+/*************************
+  First Section - actions
+ *************************/
+
+.generate-meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/****************
+  Recepi Content
+ ****************/
+
+.meal_container {
+  display: none;
+}
