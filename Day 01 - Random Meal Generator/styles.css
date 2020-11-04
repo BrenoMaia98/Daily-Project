@@ -16,6 +16,11 @@ body {
   /* overflow-y: hidden; */
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 /*************
   Components
  *************/
@@ -32,7 +37,8 @@ body {
 
 footer {
   display: flex;
-  position: absolute;
+  position: fixed;
+  background-color: #fff;
   justify-content: space-between;
   bottom: 0px;
   right: 0px;
@@ -76,11 +82,22 @@ content {
   min-height: 50%;
   display: flex;
   flex: 1;
+  padding: 1% 5%;
+  padding-bottom: 5rem; /*prevent footer overlay*/
+  background-color: rgb(242, 242, 242);
+  justify-content: space-between;
   flex-direction: column;
 }
-.project-title {
-  align-self: flex-start;
-  margin: 1rem;
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  transition: all ease 0.5s;
+}
+
+.main-title {
 }
 
 /*************************
@@ -107,5 +124,16 @@ content {
  ****************/
 
 .meal_container {
-  display: none;
+  /* display: none; */
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top: 2px solid #ccc;
+}
+
+.meal_container_first-block {
+  display: flex;
+  flex-direction: row;
+}
+.max-content {
+  flex: 1;
 }
