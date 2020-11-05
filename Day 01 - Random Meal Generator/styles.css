@@ -21,6 +21,19 @@ body {
   flex-direction: row;
 }
 
+.max-content {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider-top {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #ccc;
+}
+
 /*************
   Components
  *************/
@@ -38,7 +51,7 @@ body {
 footer {
   display: flex;
   position: fixed;
-  background-color: #fff;
+  background-color: rgb(242, 242, 242, 0);
   justify-content: space-between;
   bottom: 0px;
   right: 0px;
@@ -46,7 +59,8 @@ footer {
 }
 
 .footer_made-by {
-  padding-left: 8px;
+  background-color: rgb(242, 242, 242, 1);
+  padding: 8px;
   font-size: 1.5em;
 }
 
@@ -56,11 +70,13 @@ footer {
   padding: 0.5em 5em;
   border-radius: 6em 6em 0 0;
 }
+
 .footer_hashtag_text {
   color: white;
   font-size: 1.5em;
   margin: auto;
 }
+
 .footer_hashtag_text span {
   color: #ffa471;
 }
@@ -93,6 +109,7 @@ content {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 2rem;
 
   transition: all ease 0.5s;
 }
@@ -123,17 +140,69 @@ content {
   Meal Content
  ****************/
 
-.meal_container {
+.meal-container {
   /* display: none; */
-  margin-top: 5rem;
-  padding-top: 5rem;
-  border-top: 2px solid #ccc;
 }
 
-.meal_container_first-block {
+.meal-container_food-presentation {
   display: flex;
   flex-direction: row;
 }
-.max-content {
-  flex: 1;
+
+/* First colum*/
+
+.title-img-container {
+  justify-content: flex-start;
+}
+
+.meal_title {
+  font-size: 3em;
+  font-size: min(3em, 3vw);
+
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.meal_img-preview {
+  min-width: 50%;
+  max-height: 60vh;
+  align-self: center;
+}
+
+/* Second colum*/
+
+.food-property {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.food-property span {
+  color: rgb(80, 80, 80);
+}
+
+.meal_ingredients {
+  list-style-type: square;
+  font-size: 1.1em;
+  padding-left: 1em;
+  line-height: 2em;
+}
+
+/* Recipe steps */
+
+.recipe-steps {
+  font-size: 1.4em;
+  line-height: 1.6em;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  height: 50vh;
+  width: 50vw;
 }
